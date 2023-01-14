@@ -1,6 +1,6 @@
 .cart-container {
   width: 100%;
-  position:relative;
+  position: relative;
   background-color: #fff;
   padding: 20px 40px;
   font-family: "Open Sans";
@@ -14,14 +14,13 @@
   height: 55%;
   overflow-y: auto;
   direction: rtl;
-  
 
-  &-usage {
-    direction:ltr;
+  &__usage {
+    direction: ltr;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    button {
+    .usage__btn {
       background-color: #fff;
       position: relative;
       border: 1px solid black;
@@ -34,20 +33,20 @@
       margin-left: 5px;
       margin-top: 1px;
 
-      p {
+      .usage__para {
         text-align: center;
       }
     }
   }
 
-  &-options {
-    direction:ltr;
+  &__options {
+    direction: ltr;
     width: 100%;
     border: 1px solid black;
     border-radius: 6px;
     margin-bottom: 20px;
 
-    &-name {
+    .options__name {
       padding: 10px 20px;
       border-bottom: 1px solid black;
       font-family: "Open Sans";
@@ -61,21 +60,21 @@
       color: #212121;
     }
 
-    &-container {
+    .options__container {
       padding: 10px 20px;
       border-bottom: 1px solid black;
 
-      .pricing {
+      .container__pricing {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        .checkbox {
+        .container__checkbox {
           display: flex;
           align-items: flex-start;
           justify-content: baseline;
 
-          input[type="radio"] {
+          .checkbox__input[type="radio"] {
             appearance: none;
             width: 16px;
             height: 16px;
@@ -84,12 +83,12 @@
             background-clip: content-box;
             padding: 2px;
           }
-          
-          input[type="radio"]:checked {
-            background-color: #F68B1E;
+
+          .checkbox__input[type="radio"]:checked {
+            background-color: #f68b1e;
           }
 
-          label {
+          .checkbox__label {
             padding-left: 10px;
             font-family: "Open Sans";
             font-style: normal;
@@ -106,22 +105,22 @@
         }
       }
 
-      .print {
-        padding-left: 20px;
+      .container__print {
+        padding-left: 28px;
       }
     }
   }
 
-  &-checkbox {
-    direction:ltr;
+  &__checkbox {
+    direction: ltr;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 
-    &-round {
+    .checkbox__round {
       position: relative;
 
-      label {
+      .label__round {
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 20%;
@@ -147,33 +146,32 @@
         }
       }
 
-      input[type="checkbox"] {
+      .input__round[type="checkbox"] {
         visibility: hidden;
       }
 
-      input[type="checkbox"]:checked + label {
-        background-color: #F68B1E;
-        border-color: #F68B1E;
+      .input__round[type="checkbox"]:checked + label {
+        background-color: #f68b1e;
+        border-color: #f68b1e;
       }
 
-      input[type="checkbox"]:checked + label:after {
+      .input__round[type="checkbox"]:checked + label:after {
         opacity: 1;
       }
     }
 
-    p {
+    .checkbox__para {
       margin-left: 30px;
       padding-top: 4px;
     }
   }
 
-  &-buttons {
-    direction:ltr;
+  &__buttons {
+    direction: ltr;
     padding-bottom: 10px;
-    border-bottom: 1px solid #E8E8E8;
-    
+    border-bottom: 1px solid #e8e8e8;
 
-    .download-main {
+    .button__download {
       width: 100%;
       padding: 10px;
       display: flex;
@@ -184,12 +182,28 @@
       border-radius: 30px;
       margin-bottom: 15px;
 
-      svg {
-        height: 18px;
-        width: 18px;
+      &--cart {
+        background-color: #000000;
       }
 
-      p {
+      &--last {
+        background-color: #fff;
+        border: 1px solid #000000;
+        border-radius: 50px;
+      }
+
+      .button__svg {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+
+        &--white {
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(86deg)
+            brightness(118%) contrast(119%);
+        }
+      }
+
+      .button__para {
         margin-left: 10px;
         font-family: "Open Sans";
         font-size: 14px;
@@ -198,6 +212,10 @@
         letter-spacing: -0.4px;
         text-transform: uppercase;
         color: #212121;
+
+        &--cart {
+          color: #fff;
+        }
       }
     }
 
@@ -208,77 +226,15 @@
       align-items: center;
       margin-bottom: 20px;
 
-      button {
+      .double__btn {
         padding: 10px;
         width: 48%;
         border: 1px solid rgba(0, 0, 0, 0);
         border-radius: 30px;
       }
     }
-
-    .cart {
-      width: 100%;
-      padding: 10px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(0, 0, 0, 0);
-      border-radius: 30px;
-      margin-bottom: 15px;
-      background-color: #000000;
-
-      svg {
-        height: 18px;
-        width: 18px;
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(86deg)
-          brightness(118%) contrast(119%);
-      }
-
-      p {
-        margin-left: 10px;
-        font-family: "Open Sans";
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: -0.4px;
-        text-transform: uppercase;
-        color: #ffffff;
-      }
-    }
-
-    .download-last {
-      width: 100%;
-      padding: 10px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(0, 0, 0, 0);
-      border-radius: 30px;
-      margin-bottom: 15px;
-
-      svg {
-        height: 18px;
-        width: 18px;
-      }
-
-      p {
-        margin-left: 10px;
-        font-family: "Open Sans";
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: -0.4px;
-        text-transform: uppercase;
-        color: #212121;
-      }
-    }
   }
-
 }
-
-
 
 @media (min-width: 320px) and (max-width: 480px) {
   .cart-container {
@@ -286,14 +242,11 @@
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
 
-    &-buttons {
+    &__buttons {
       border-bottom: none;
     }
   }
-
-
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .cart-container {
@@ -305,15 +258,15 @@
     justify-content: center;
     align-items: center;
 
-    &-usage {
+    &__usage {
       width: 50%;
     }
 
-    &-options {
+    &__options {
       width: 50%;
     }
 
-    &-buttons {
+    &__buttons {
       width: 50%;
       border-bottom: none;
     }

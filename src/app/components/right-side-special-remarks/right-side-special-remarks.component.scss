@@ -4,7 +4,7 @@
   padding: 40px;
   height: 45%;
 
-  &-special-remarks {
+  &__special-remarks {
     width: 100%;
     font-family: "Open Sans";
     font-style: normal;
@@ -13,14 +13,14 @@
     color: #212121;
     margin-bottom: 40px;
 
-    h2 {
+    .special-remarks__title {
       font-size: 14px;
       margin-bottom: 10px;
       font-weight: 700;
       text-transform: uppercase;
     }
 
-    p {
+    .special-remarks__para {
       font-weight: 400;
       font-size: 12px;
     }
@@ -32,7 +32,7 @@
     padding: 10px 25px;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
-    &-special-remarks {
+    &__special-remarks {
       margin-bottom: 20px;
       &:last-of-type {
         padding-bottom: 20px;
@@ -47,7 +47,7 @@
     padding: 10px 25px;
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
-    &-special-remarks {
+    &__special-remarks {
       margin-bottom: 20px;
       &:last-of-type {
         padding-bottom: 20px;

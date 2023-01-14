@@ -1,4 +1,4 @@
-.right-side-container {
+.right-side__container {
     height: 100%;
     width: 30vw;
     background-color: red;
@@ -6,7 +6,7 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .right-side-container {
+    .right-side__container {
         width: 100vw;
         height: auto;
         margin-top: 80px;
@@ -17,7 +17,7 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .right-side-container {
+    .right-side__container {
         width: 100vw;
         height: auto;
         margin-top: 0;

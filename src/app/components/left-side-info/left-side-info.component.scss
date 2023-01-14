@@ -3,7 +3,7 @@
   padding: 50px;
   font-family: "Open Sans", sans-serif;
 
-  &-credentials {
+  &__credentials {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
     color: #212121;
 
-    &-data {
+    &__data {
       margin-right: 300px;
 
       h3 {
@@ -30,7 +30,7 @@
     }
   }
 
-  &-description {
+  &__description {
     width: 100%;
     margin-top: 50px;
     padding-right: 50px;
@@ -54,7 +54,7 @@
     }
   }
 
-  &-keywords {
+  &__keywords {
     margin-top: 20px;
 
     h3 {
@@ -82,9 +82,9 @@
     padding: 25px;
     margin-bottom: 20px;
     
-    &-credentials {
+    &__credentials {
       justify-content: center;
-      &-data {
+      &__data {
         margin-right: 50px;
       }
     }
@@ -98,9 +98,9 @@
     padding: 25px;
     margin-bottom: 20px;
     
-    &-credentials {
+    &__credentials {
       justify-content: center;
-      &-data {
+      &__data {
         margin-right: 70px;
       }
     }
