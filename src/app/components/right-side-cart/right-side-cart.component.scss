@@ -71,8 +71,26 @@
         justify-content: space-between;
 
         .checkbox {
+          display: flex;
+          align-items: flex-start;
+          justify-content: baseline;
+
+          input[type="radio"] {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #555555;
+            border-radius: 50%;
+            background-clip: content-box;
+            padding: 2px;
+          }
+          
+          input[type="radio"]:checked {
+            background-color: #F68B1E;
+          }
+
           label {
-            padding-left: 5px;
+            padding-left: 10px;
             font-family: "Open Sans";
             font-style: normal;
             font-weight: 400;
@@ -134,8 +152,8 @@
       }
 
       input[type="checkbox"]:checked + label {
-        background-color: #f1b441;
-        border-color: #f1b441;
+        background-color: #F68B1E;
+        border-color: #F68B1E;
       }
 
       input[type="checkbox"]:checked + label:after {
