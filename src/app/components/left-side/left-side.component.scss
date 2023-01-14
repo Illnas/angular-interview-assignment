@@ -4,3 +4,17 @@
     height: 100vh;
     background-color: white;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .left-side-container {
+        width: 100vw;
+    }
+  }
+
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .left-side-container {
+        width: 100vw;
+        height: 100%;
+    }
+  }

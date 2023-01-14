@@ -1,5 +1,27 @@
 .right-side-container {
-    height: 100vh;
+    height: 100%;
     width: 30vw;
     background-color: red;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .right-side-container {
+        width: 100vw;
+        height: auto;
+        margin-top: 80px;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .right-side-container {
+        width: 100vw;
+        height: auto;
+        margin-top: 0;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
 }

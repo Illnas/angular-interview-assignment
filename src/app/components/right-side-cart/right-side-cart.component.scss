@@ -259,3 +259,45 @@
   }
 
 }
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cart-container {
+    padding: 10px 20px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+
+    &-buttons {
+      border-bottom: none;
+    }
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart-container {
+    padding: 10px 20px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-usage {
+      width: 50%;
+    }
+
+    &-options {
+      width: 50%;
+    }
+
+    &-buttons {
+      width: 50%;
+      border-bottom: none;
+    }
+  }
+}

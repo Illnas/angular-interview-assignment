@@ -9,3 +9,29 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .image-container {
+      img {
+        width: 90vw;
+        height: 90%;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-container {
+    padding: 25px;
+    margin-bottom: 20px;
+    
+    &-credentials {
+      justify-content: center;
+      &-data {
+        margin-right: 50px;
+      }
+    }
+  }
+}
