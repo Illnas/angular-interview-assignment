@@ -37,7 +37,7 @@ This project is selection process assignment.
 
 ### Feedback from Task Assigner
 
-- Task was not reviewed and therefore there is no feedback notes yet!
+- Task was not reviewed and therefore there is no feedback!
 
 
 
