@@ -1,3 +1,7 @@
+
+@import "src/styles.scss";
+
+
 .container {
   width: 100%;
   background-color: #fff;
@@ -6,28 +10,37 @@
 
   &__special-remarks {
     width: 100%;
-    font-family: "Open Sans";
-    font-style: normal;
-    line-height: 16px;
-    letter-spacing: -0.4px;
     color: #212121;
     margin-bottom: 40px;
 
     .special-remarks__title {
-      font-size: 14px;
+      @include textStyle(700, 14px, 16px, -0.4px);
       margin-bottom: 10px;
-      font-weight: 700;
       text-transform: uppercase;
     }
 
     .special-remarks__para {
-      font-weight: 400;
-      font-size: 12px;
+      @include textStyle(400, 12px, 16px, -0.4px);
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding: 10px 25px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    &__special-remarks {
+      margin-bottom: 20px;
+      &:last-of-type {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e8e8e8;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
   .container {
     padding: 10px 25px;
     -webkit-transform: scaleY(-1);

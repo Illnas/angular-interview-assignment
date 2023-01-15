@@ -5,12 +5,20 @@
     background-color: white;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (min-width: 320px) and (max-width: 480px) {
     .left-side__container {
         width: 100vw;
     }
   }
 
+  @media (min-width: 481px) and (max-width: 767px) {
+    .left-side__container{
+        width: 100vw;
+    }
+  }
   
   @media (min-width: 768px) and (max-width: 1024px) {
     .left-side__container {
